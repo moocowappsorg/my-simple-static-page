@@ -2,5 +2,7 @@ services:
   - type: web
     name: simple-static-page-2
     runtime: static
-    buildCommand: echo 'No build needed'
     staticPublishPath: .
+    envVars:
+      - key: SKIP_INSTALL_DEPS
+        value: true
