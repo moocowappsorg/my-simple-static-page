@@ -1,4 +1,6 @@
 services:
-  - type: static
+  - type: web
     name: my-simple-static-page
+    runtime: static
+    buildCommand: echo 'No build needed'
     staticPublishPath: .
