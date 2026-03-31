@@ -2,6 +2,7 @@ services:
   - type: web
     name: simple-static-page-2
     runtime: static
+    buildCommand: "true"
     staticPublishPath: .
     envVars:
       - key: SKIP_INSTALL_DEPS
